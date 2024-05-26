@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Sanderson, pan y mandarinas</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div class="image-container1"></div>
+  <div class="image-container2"></div>
+  <script src="js/i18n.js"></script>
+  <div class="container">
+    <div class="heading">
+      <div class="centrado">
+        <h1> Jueguito <br> Exclusivo <br> para África <br> </h1>
+        <h2>Cómo de mal estás hoy (puntuación):</h2>
+      </div>
+      <div class="centrado3">
+        <div class="score-container">0</div>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <a class="restart-button"><script>document.write(i18n.get('new_game'))</script></a>
+      <a class="undo-button"><script>document.write(i18n.get('undo'))</script></a>
+    </div>
+
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <br>
+        <div class="lower">
+	        <a class="keep-playing-button"><script>document.write(i18n.get('keep_going'))</script></a>
+          <a class="retry-button"><script>document.write(i18n.get('try_again'))</script></a>
+          <a class="confirm-button"><script>document.write(i18n.get('ok'))</script></a>
+          <a class="undo-move-button"><script>document.write(i18n.get('undo'))</script></a>
+          <a class="cancel-button"><script>document.write(i18n.get('cancel'))</script></a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+    <br>
+    <div class="centrado2">
+      <div>Tu mayor disociación:</div>
+      <div class="best-container">0</div>
+    </div>
+    <div class="esquina-inferior-derecha">Te quiero</div>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+  <script src="js/nightmode.js"></script>
+
+</body>
+</html>
